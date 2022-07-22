@@ -227,6 +227,17 @@ var y = normal.cdf( 0.5 );
 // returns ~0.354
 ```
 
+#### Normal.prototype.logcdf( x )
+
+Evaluates the natural logarithm of the [cumulative distribution function][cdf] (CDF).
+
+```javascript
+var normal = new Normal( 2.0, 4.0 );
+
+var y = normal.logcdf( 0.5 );
+// returns ~-1.039
+```
+
 #### Normal.prototype.logpdf( x )
 
 Evaluates the natural logarithm of the [probability density function][pdf] (PDF).
@@ -373,8 +384,8 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/stats-base-dists-normal-ctor.svg
 [npm-url]: https://npmjs.org/package/@stdlib/stats-base-dists-normal-ctor
 
-[test-image]: https://github.com/stdlib-js/stats-base-dists-normal-ctor/actions/workflows/test.yml/badge.svg?branch=v0.0.8
-[test-url]: https://github.com/stdlib-js/stats-base-dists-normal-ctor/actions/workflows/test.yml?query=branch:v0.0.8
+[test-image]: https://github.com/stdlib-js/stats-base-dists-normal-ctor/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/stats-base-dists-normal-ctor/actions/workflows/test.yml?query=branch:main
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/stats-base-dists-normal-ctor/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/stats-base-dists-normal-ctor?branch=main

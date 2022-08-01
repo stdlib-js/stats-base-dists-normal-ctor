@@ -34,38 +34,30 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/stats-base-dists-normal-ctor
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-Normal = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-normal-ctor@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var Normal = require( 'path/to/vendor/umd/stats-base-dists-normal-ctor/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-normal-ctor@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.Normal;
-})();
-</script>
+var Normal = require( '@stdlib/stats-base-dists-normal-ctor' );
 ```
 
 #### Normal( \[mu, sigma] )
@@ -235,6 +227,17 @@ var y = normal.cdf( 0.5 );
 // returns ~0.354
 ```
 
+#### Normal.prototype.logcdf( x )
+
+Evaluates the natural logarithm of the [cumulative distribution function][cdf] (CDF).
+
+```javascript
+var normal = new Normal( 2.0, 4.0 );
+
+var y = normal.logcdf( 0.5 );
+// returns ~-1.039
+```
+
 #### Normal.prototype.logpdf( x )
 
 Evaluates the natural logarithm of the [probability density function][pdf] (PDF).
@@ -304,13 +307,8 @@ y = normal.quantile( 1.9 );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-normal-ctor@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var Normal = require( '@stdlib/stats-base-dists-normal-ctor' );
 
 var normal = new Normal( 2.0, 4.0 );
 
@@ -325,11 +323,6 @@ var s2 = normal.variance;
 
 var y = normal.cdf( 0.8 );
 // returns ~0.382
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -391,8 +384,8 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/stats-base-dists-normal-ctor.svg
 [npm-url]: https://npmjs.org/package/@stdlib/stats-base-dists-normal-ctor
 
-[test-image]: https://github.com/stdlib-js/stats-base-dists-normal-ctor/actions/workflows/test.yml/badge.svg?branch=v0.0.8
-[test-url]: https://github.com/stdlib-js/stats-base-dists-normal-ctor/actions/workflows/test.yml?query=branch:v0.0.8
+[test-image]: https://github.com/stdlib-js/stats-base-dists-normal-ctor/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/stats-base-dists-normal-ctor/actions/workflows/test.yml?query=branch:main
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/stats-base-dists-normal-ctor/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/stats-base-dists-normal-ctor?branch=main

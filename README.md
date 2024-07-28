@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import Normal from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-normal-ctor@deno/mod.js';
+import Normal from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-normal-ctor@v0.2.2-deno/mod.js';
 ```
 
 #### Normal( \[mu, sigma] )
@@ -303,7 +303,7 @@ y = normal.quantile( 1.9 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import Normal from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-normal-ctor@deno/mod.js';
+import Normal from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-normal-ctor@v0.2.2-deno/mod.js';
 
 var normal = new Normal( 2.0, 4.0 );
 

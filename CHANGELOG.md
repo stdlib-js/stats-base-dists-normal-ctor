@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`53c6e6c`](https://github.com/stdlib-js/stdlib/commit/53c6e6c6d4c9f0ce1d2ebfb19f340d1879c8e8ae) - **bench:** update random value generation [(#9891)](https://github.com/stdlib-js/stdlib/pull/9891) _(by Harsh Yadav, Athan Reines)_
 -   [`7add020`](https://github.com/stdlib-js/stdlib/commit/7add0201c13e56a0381926ccfd4073c84eaf2ed4) - **test:** use standardized assertion messages and fix lint errors _(by Philipp Burckhardt)_
 
 </details>
@@ -24,8 +25,10 @@
 
 ### Contributors
 
-A total of 1 person contributed to this release. Thank you to this contributor:
+A total of 3 people contributed to this release. Thank you to the following contributors:
 
+-   Athan Reines
+-   Harsh Yadav
 -   Philipp Burckhardt
 
 </section>
